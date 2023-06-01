@@ -30,8 +30,12 @@ some/dir/example.py
 Every *edit block* must be fenced w/triple backticks with the correct code language.
 Every *edit block* must start with the full path! *NEVER* propose edit blocks for *read-only* files.
 The ORIGINAL section must be an *exact* set of lines from the file:
+- Include the smallest possible number of lines from the original as possible to remain unambiguous.
 - NEVER SKIP LINES!
 - Include all original leading spaces and indentation!
+
+We are doing an exact string match so ANY differences between what is in the ORIGINAL block and what is in the file will 
+result in the operation FAILING.
 
 Edits to different parts of a file each need their own *edit block*.
 
