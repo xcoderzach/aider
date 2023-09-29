@@ -1,3 +1,20 @@
+# Test New LLMs (CodeLlama, Llama2, etc.)
+
+test other LLMs (codellama, wizardcoder, etc.) with it, I just wrote a [1-click proxy](https://github.com/BerriAI/litellm#openai-proxy-server) to translate openai calls to huggingface, anthropic, togetherai, etc. api calls.
+
+**code**
+```
+$ pip install litellm
+
+$ litellm --model huggingface/bigcode/starcoder
+
+#INFO:     Uvicorn running on http://0.0.0.0:8000
+
+$ aider --openai-api-base http://0.0.0.0:8000
+```
+
+I'd love to know if this solves a problem for you
+
 # aider is GPT powered coding in your terminal
 
 `aider` is a command-line chat tool that allows you to write and edit
